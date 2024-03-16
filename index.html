@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Hunter's Notes</title>
+    <title>Hunter's Note</title>
 </head>
 <body>
     <div class="menu-nav">
         <img class="monster-menu" src="./images/general_icons/monster-menu.png" alt="Monster Menu" srcset="">
     </div>
-    <div class="nav-background">teste</div>
+    <div class="nav-background"></div>
     <div class="container">
 
         <nav class="navMonster">
@@ -23,18 +23,18 @@
             <img class="border" src="./images/noteborder11.png" alt="Note Border 1">
             
             <div class="title-section custom-border">
-                <h3>Fanged Wyvern</h3>
-                <h2>Great Jagras</h2>
+                <h3 id="monster-class">Fanged Wyvern</h3>
+                <h2 id="monster-name">Great Jagras</h2>
             </div>
 
             <picture>
-                <img class="main-icon" src="./images/monster_icons/great_jagras.webp" alt="Great Jagras">
+                <img id="monster-icon" class="main-icon" src="./images/monster_icons/great_jagras.webp" alt="Great Jagras">
             </picture>
 
             <div class="hunt-section">
                 <div class="hunts custom-border">
                     <span class="darker-background">Hunted (Captured)</span>
-                    <span class="number-right arial">50 (0)</span>
+                    <span id="monster-hunted" class="number-right arial">50 (0)</span>
                 </div>
 
                 <div class="crowns-section">
@@ -43,7 +43,7 @@
                         <picture>
                             <img src="./images/smallest.png" alt="Small Crown">
                         </picture>
-                        <span class="number-right arial largest">227.42</span>
+                        <span id="monster-smallest" class="number-right arial largest">227.42</span>
                     </div>
 
                     <div class="crown custom-border">
@@ -51,14 +51,14 @@
                         <picture>
                             <img src="./images/largest.png" alt="Large Crown">
                         </picture>
-                        <span class="number-right arial smallest">1320.50</span>
+                        <span id="monster-largest" class="number-right arial smallest">1320.50</span>
                     </div>
                 </div>
             </div>
 
             <div class="description-section">
                 <span class="darker-background custom-border">Characteristics</span>
-                <p class="characteristics arial">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, reprehenderit dignissimos recusandae ratione atque quas eaque tenetur dolorem perferendis nisi quidem laboriosam aspernatur corporis velit dolorum dicta ullam sed facilisLorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, reprehenderit dignissimos recusandae ratione atque quas eaque tenetur dolorem perferendis nisi quidem laboriosam aspernatur corporis velit dolorum dicta ullam sed facilisLorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, reprehenderit dignissimos recusandae ratione atque quas eaque tenetur dolorem perferendis nisi quidem laboriosam aspernatur corporis velit dolorum dicta ullam sed facilis.</p>
+                <p id="monster-characteristics" class="characteristics arial">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, reprehenderit dignissimos recusandae ratione atque quas eaque tenetur dolorem perferendis nisi quidem laboriosam aspernatur corporis velit dolorum dicta ullam sed facilisLorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, reprehenderit dignissimos recusandae ratione atque quas eaque tenetur dolorem perferendis nisi quidem laboriosam aspernatur corporis velit dolorum dicta ullam sed facilisLorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, reprehenderit dignissimos recusandae ratione atque quas eaque tenetur dolorem perferendis nisi quidem laboriosam aspernatur corporis velit dolorum dicta ullam sed facilis.</p>
             </div>
 
         </main>
@@ -72,6 +72,6 @@
 
     </div>
 
-    <script src="./script.js"></script>
+    <script type="module" src="./script.js"></script>
 </body>
 </html>

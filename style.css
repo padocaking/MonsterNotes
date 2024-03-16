@@ -260,7 +260,7 @@ main .main-icon {
     border-top: 0;
     max-height: 150px;
     overflow-y: auto;
-    margin-bottom: 20%;
+    margin-bottom: 15%;
 }
 
 .characteristics::-webkit-scrollbar {
