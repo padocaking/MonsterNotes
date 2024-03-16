@@ -1,44 +1,292 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    z-index: 2;
 }
 
 body {
-    background-image: url(./images/leather-texture.jpg);
-    background-size: 2500px;
+    background-image: url(./images/leather-texture2.png);
+    background-size: 2200px;
+    box-shadow: inset 1px 1px 10px 15px rgba(0, 0, 0, 0.1),
+        inset 1px -1px 10px 15px rgba(0, 0, 0, 0.1),
+        inset -1px 1px 10px 15px rgba(0, 0, 0, 0.1),
+        -1px -1px 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.menu-nav {
+    display: none;
+}
+
+.nav-background {
+    display: none;
+}
+
+img {
+    max-width: 100%;
 }
 
 .container {
     display: grid;
-    grid-template-columns: 0.30fr 0.35fr 0.35fr;
-    margin-top: 20px;
-    height: calc(100vh - 20px);
+    grid-template-columns: 0.3fr 0.35fr 0.35fr;
+    padding: 20px;
+    min-height: 100vh;
 }
 
-.monsterNav {
+.arial {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.darker-background {
+    box-sizing: content-box;
+    font-size: calc(0.8vw + 8px);
+    padding: 8px;
+    background: linear-gradient(
+        90deg,
+        rgba(2, 0, 36, 0) 0%,
+        rgba(167, 140, 110, 0.75) 12%,
+        rgba(167, 140, 110, 0.75) 50%,
+        rgba(167, 140, 110, 0.75) 88%,
+        rgba(0, 212, 255, 0) 100%
+    );
+
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: #d5a911;
+    font-weight: 400;
+    text-shadow: 2px 2px 2px #00000099, 2px -2px 2px #00000099,
+        -2px 2px 2px #00000099, -2px -2px 2px #00000099, 2px 0px 2px #00000099,
+        0px 2px 2px #00000099, -2px 0px 2px #00000099, 0px -2px 2px #00000099,
+        -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.custom-border {
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 2px;
+    border-image-source: linear-gradient(
+        90deg,
+        rgba(124, 97, 76, 0) 0%,
+        rgba(124, 97, 76, 1) 12%,
+        rgba(124, 97, 76, 1) 19%,
+        rgba(124, 97, 76, 0) 24%,
+        rgba(124, 97, 76, 0) 30%,
+        rgba(124, 97, 76, 1) 35%,
+        rgba(124, 97, 76, 1) 39%,
+        rgba(124, 97, 76, 1) 45%,
+        rgba(124, 97, 76, 1) 50%,
+        rgba(124, 97, 76, 0) 57%,
+        rgba(124, 97, 76, 1) 67%,
+        rgba(124, 97, 76, 0.4822303921568627) 73%,
+        rgba(124, 97, 76, 0) 81%,
+        rgba(124, 97, 76, 0.5942752100840336) 87%,
+        rgba(124, 97, 76, 1) 91%,
+        rgba(124, 97, 76, 0) 100%
+    );
+    /*border-image-source: linear-gradient(
+        90deg,
+        rgba(124, 97, 76, 1) 0%,
+        rgba(124, 97, 76, 0) 12%,
+        rgba(124, 97, 76, 1) 19%,
+        rgba(124, 97, 76, 1) 24%,
+        rgba(124, 97, 76, 1) 35%,
+        rgba(124, 97, 76, 1) 39%,
+        rgba(124, 97, 76, 1) 45%,
+        rgba(124, 97, 76, 0) 50%,
+        rgba(124, 97, 76, 1) 60%,
+        rgba(124, 97, 76, 1) 67%,
+        rgba(124, 97, 76, 1) 73%,
+        rgba(124, 97, 76, 0) 81%,
+        rgba(124, 97, 76, 1) 87%,
+        rgba(124, 97, 76, 1) 91%,
+        rgba(124, 97, 76, 1) 100%
+    );*/
+    border-left: 0;
+    border-right: 0;
+}
+
+.navMonster {
     background-image: url(./images/monster-info1.png);
     background-repeat: repeat;
-    background-size: 500px;
+    background-size: 400px;
     background-position: 200px 300px;
     margin-right: 20px;
     position: relative;
+    border-radius: 10px;
 }
 
 main {
     background-image: url(./images/monster-info1.png);
     background-repeat: repeat;
-    background-size: 500px;
+    background-size: 400px;
     background-position: 200px 100px;
     position: relative;
+    box-shadow: inset -10px 0px 20px 0px #bb9066;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 10px 0px 0px 10px;
+}
+
+main picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .main-icon {
+    box-sizing: border-box;
+    width: 80%;
+    padding: 8%;
+    filter: drop-shadow(0px 0px 35px rgba(0, 0, 0, 0.7));
+}
+
+.title-section {
+    width: 90%;
+    text-align: center;
+    margin-top: 8%;
+}
+
+.title-section h3 {
+    font-size: calc(0.8vw + 11px);
+    font-weight: 500;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.title-section h2 {
+    font-size: calc(0.8vw + 21px);
+    font-weight: 500;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.hunt-section {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    gap: 7px;
+}
+
+.hunts {
+    display: grid;
+    grid-template-columns: 0.45fr 0.55fr;
+    justify-items: stretch;
+    align-items: center;
+}
+
+.hunts .number-right {
+    text-align: right;
+    font-size: calc(0.8vw + 12px);
+    font-weight: 500;
+}
+
+.crowns-section {
+    display: flex;
+    width: 100%;
+    gap: 4%;
+}
+
+.crown {
+    display: grid;
+    grid-template-columns: 2fr minmax(25px, 0.5fr) 1fr;
+    align-items: center;
+    gap: 10px;
+}
+
+@media (max-width: 1250px) {
+    .crowns-section {
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    .crowns-section img {
+        max-height: 30px;
+    }
+}
+
+.crown .number-right {
+    font-size: calc(0.8vw + 10px);
+    text-align: right;
+}
+
+.smallest {
+    color: #d97611;
+    text-shadow: 1px 1px 3px #00000064, -1px -1px 3px #00000064,
+        1px -1px 3px #00000064, -1px 1px 3px #00000064;
+}
+
+.largest {
+    color: #4c9db1;
+    text-shadow: 1px 1px 3px #00000064, -1px -1px 3px #00000064,
+        1px -1px 3px #00000064, -1px 1px 3px #00000064;
+}
+
+.description-section {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    margin-top: 7px;
+}
+
+.description-section span {
+    text-align: center;
+    font-size: calc(0.8vw + 10px);
+}
+
+.description-section .characteristics {
+    font-size: calc(0.8vw + 6px);
+    padding: 2% 2% 0% 4%;
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 2px;
+    border-image-source: linear-gradient(
+        90deg,
+        rgba(124, 97, 76, 0.519) 0%,
+        rgba(124, 97, 76, 0) 12%,
+        rgba(124, 97, 76, 1) 19%,
+        rgba(124, 97, 76, 1) 24%,
+        rgba(124, 97, 76, 1) 35%,
+        rgba(124, 97, 76, 1) 39%,
+        rgba(124, 97, 76, 1) 45%,
+        rgba(124, 97, 76, 0) 50%,
+        rgba(124, 97, 76, 1) 60%,
+        rgba(124, 97, 76, 1) 67%,
+        rgba(124, 97, 76, 1) 73%,
+        rgba(124, 97, 76, 0) 81%,
+        rgba(124, 97, 76, 1) 87%,
+        rgba(124, 97, 76, 1) 91%,
+        rgba(124, 97, 76, 0.423) 100%
+    );
+    border-top: 0;
+    max-height: 150px;
+    overflow-y: auto;
+    margin-bottom: 20%;
+}
+
+.characteristics::-webkit-scrollbar {
+    width: 5px;
+    height: 8px;
+    background-color: #aaaaaa00;
+}
+
+.characteristics::-webkit-scrollbar-thumb {
+    background: #00000050;
+    border-radius: 20px;
+}
+
+.characteristics::-webkit-scrollbar-thumb:hover {
+    background: #00000088;
 }
 
 .monsterInfo2 {
-    background-image: url(./images/monster-info2.png);
+    background-image: url(./images/monster-info1.png);
     background-repeat: repeat;
-    background-size: 500px;
-    background-position: 100px 100px;
+    background-size: 400px;
+    background-position: 320px 100px;
     position: relative;
+    box-shadow: inset 10px 0px 20px 0px #ba8f64;
+
+    border-radius: 0px 10px 10px 0px;
 }
 
 .border {
@@ -46,5 +294,72 @@ main {
     height: 100%;
     width: 100%;
     opacity: 70%;
-    z-index: 0;
+    z-index: 1;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        padding: 0;
+    }
+
+    .nav-background {
+        position: fixed;
+        opacity: 0%;
+        z-index: 3;
+        height: 100vh;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.56);
+    }
+
+    .active {
+        display: inline-block;
+        opacity: 100%;
+        transition: all 0.2s ease;
+    }
+
+    .navMonster {
+        position: fixed;
+        height: 100vh;
+        width: 80%;
+        z-index: 4;
+        padding: 0;
+        transform: translateX(-107%);
+        transition: all 0.3s ease;
+    }
+
+    .border {
+        display: none;
+    }
+
+    .open {
+        transform: translateX(-10%);
+    }
+
+    .menu-nav {
+        display: inline-block;
+        z-index: 4;
+        position: absolute;
+        background-image: url(./images/menu-background.png);
+        background-size: cover;
+        background-position: -54px;
+        padding: 30px 10px;
+        width: 15%;
+        border-radius: 0px 40% 40% 0px;
+        top: 40px;
+        cursor: pointer;
+        box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.542);
+    }
+
+    .monster-menu {
+        max-width: 100%;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+        min-height: auto;
+    }
+
+    .description-section .characteristics {
+        font-size: calc(0.8vw + 11px);
+    }
 }
