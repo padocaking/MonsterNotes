@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     z-index: 2;
+    list-style: none;
 }
 
 body {
@@ -104,6 +105,8 @@ img {
     border-right: 0;
 }
 
+/* NAV SECTION */
+
 .navMonster {
     background-image: url(./images/monster-info1.png);
     background-repeat: repeat;
@@ -113,6 +116,8 @@ img {
     position: relative;
     border-radius: 10px;
 }
+
+/* MAIN SECTION */
 
 main {
     background-image: url(./images/monster-info1.png);
@@ -145,17 +150,17 @@ main .main-icon {
 .title-section {
     width: 90%;
     text-align: center;
-    margin-top: 8%;
+    margin-top: 12%;
 }
 
 .title-section h3 {
-    font-size: calc(0.8vw + 11px);
+    font-size: calc(0.8vw + 12px);
     font-weight: 500;
     font-family: "Times New Roman", Times, serif;
 }
 
 .title-section h2 {
-    font-size: calc(0.8vw + 21px);
+    font-size: calc(0.8vw + 22px);
     font-weight: 500;
     font-family: "Times New Roman", Times, serif;
 }
@@ -230,12 +235,11 @@ main .main-icon {
 
 .description-section span {
     text-align: center;
-    font-size: calc(0.8vw + 10px);
 }
 
 .description-section .characteristics {
     font-size: calc(0.8vw + 6px);
-    padding: 2% 2% 0% 4%;
+    padding: 2% 2% 6% 4%;
     border: 10px solid;
     border-image-slice: 1;
     border-width: 2px;
@@ -258,7 +262,7 @@ main .main-icon {
         rgba(124, 97, 76, 0.423) 100%
     );
     border-top: 0;
-    max-height: 150px;
+    height: 125px;
     overflow-y: auto;
     margin-bottom: 15%;
 }
@@ -278,6 +282,8 @@ main .main-icon {
     background: #00000088;
 }
 
+/* SECTION 2 */
+
 .monsterInfo2 {
     background-image: url(./images/monster-info1.png);
     background-repeat: repeat;
@@ -285,8 +291,106 @@ main .main-icon {
     background-position: 320px 100px;
     position: relative;
     box-shadow: inset 10px 0px 20px 0px #ba8f64;
-
     border-radius: 0px 10px 10px 0px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.habitats-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin-top: 12%;
+}
+
+.habitats-container span {
+    width: 100%;
+    text-align: center;
+}
+
+.habitats-list {
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 2px;
+    border-image-source: linear-gradient(
+        90deg,
+        rgba(124, 97, 76, 0.519) 0%,
+        rgba(124, 97, 76, 0) 12%,
+        rgba(124, 97, 76, 1) 19%,
+        rgba(124, 97, 76, 1) 24%,
+        rgba(124, 97, 76, 1) 35%,
+        rgba(124, 97, 76, 1) 39%,
+        rgba(124, 97, 76, 1) 45%,
+        rgba(124, 97, 76, 0) 50%,
+        rgba(124, 97, 76, 1) 60%,
+        rgba(124, 97, 76, 1) 67%,
+        rgba(124, 97, 76, 1) 73%,
+        rgba(124, 97, 76, 0) 81%,
+        rgba(124, 97, 76, 1) 87%,
+        rgba(124, 97, 76, 1) 91%,
+        rgba(124, 97, 76, 0.423) 100%
+    );
+
+    width: 100%;
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr;
+}
+
+.habitats-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5% 8%;
+    background: linear-gradient(
+        90deg,
+        rgba(2, 0, 36, 0) 0%,
+        rgba(167, 140, 110, 0.75) 12%,
+        rgba(167, 140, 110, 0.75) 50%,
+        rgba(167, 140, 110, 0.75) 88%,
+        rgba(0, 212, 255, 0) 100%
+    );
+}
+
+.habitats-item img {
+    width: 80px;
+}
+
+.habitats-item span {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    color: white;
+    text-shadow: 2px 2px 2px #00000099, 2px -2px 2px #00000099,
+        -2px 2px 2px #00000099, -2px -2px 2px #00000099, 2px 0px 2px #00000099,
+        0px 2px 2px #00000099, -2px 0px 2px #00000099, 0px -2px 2px #00000099,
+        -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.information-container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 8%;
+}
+
+.information-container span {
+    width: 100%;
+    text-align: center;
+}
+
+.information-container p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: calc(0.8vw + 6px);
+    padding: 2% 6% 6% 6%;
+    border-top: 0;
+    line-height: 28px;
+    position: relative;
+    text-decoration: underline;
+    text-decoration-color: rgba(124, 97, 76, 0.5);
+    text-decoration-thickness: 1.5px;
 }
 
 .border {
@@ -298,6 +402,10 @@ main .main-icon {
 }
 
 @media (max-width: 1024px) {
+    .darker-background {
+        font-size: calc(0.8vw + 15px);
+    }
+
     .container {
         padding: 0;
     }
@@ -359,7 +467,21 @@ main .main-icon {
         min-height: auto;
     }
 
+    main {
+        margin-top: 15px;
+        border-radius: 10px;
+    }
+
+    .monsterInfo2 {
+        margin: 15px 0px;
+        border-radius: 10px;
+    }
+
     .description-section .characteristics {
-        font-size: calc(0.8vw + 11px);
+        font-size: calc(0.8vw + 12px);
+    }
+
+    .information-container p {
+        font-size: calc(0.8vw + 12px);
     }
 }

@@ -34,12 +34,12 @@ const updateMonsterInfo = (monster) => {
     monsterClass.innerHTML = monster.class;
     monsterName.innerHTML = monster.name;
     monsterIconPath.src = monster.iconPath;
-    monsterHunted.innerHTML = monster.hunted;
-    monsterSmallest.innerHTML = monster.smallest;
-    monsterLargest.innerHTML = monster.largest;
+    monsterHunted.innerHTML = `${monster.hunted} (${monster.captured})`;
+    monsterSmallest.innerHTML = monster.smallest === 0 ? "-" : monster.smallest;
+    monsterLargest.innerHTML = monster.largest === 0 ? "-" : monster.largest;
     monsterCharacteristics.innerHTML = monster.characteristics;
 };
 
 window.addEventListener("DOMContentLoaded", () => {
-    console.log("carregou");
+    updateMonsterInfo(currentMonster);
 });
