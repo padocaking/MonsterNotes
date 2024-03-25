@@ -167,7 +167,7 @@ const monsterData = [
         iconPath: "./images/monster_icons/anjanath.webp",
     },
     {
-        id: 0,
+        id: 7,
         name: "",
         class: "",
         hunted: 0,
@@ -190,7 +190,7 @@ const monsterData = [
         iconPath: "./images/monster_icons/.webp",
     },
     {
-        id: 0,
+        id: 8,
         name: "",
         class: "",
         hunted: 0,
@@ -213,7 +213,7 @@ const monsterData = [
         iconPath: "./images/monster_icons/.webp",
     },
     {
-        id: 0,
+        id: 9,
         name: "",
         class: "",
         hunted: 0,
@@ -237,6 +237,8 @@ const monsterData = [
     },
 ];
 
+let currentMonster = monsterData[0];
+
 // NAV FUNCIONALITIES
 
 const navMenu = document.querySelector(".menu-nav");
@@ -253,6 +255,11 @@ navBackground.addEventListener("click", () => {
     navBackground.classList.remove("active");
 });
 
+const changeNavHover = (prevId, currId) => {
+    document.getElementById(`monsterNav${prevId}`).classList.remove("nav-item-hover")
+    document.getElementById(`monsterNav${currId}`).classList.add("nav-item-hover")
+}
+
 // MAIN MONSTER INFO FUNCIONALITIES
 
 const monsterClass = document.querySelector("#monster-class");
@@ -268,8 +275,6 @@ const monsterHabitatsList = document.querySelector(".habitats-list")
 const monsterInformation = document.querySelector("#monster-information")
 const navDisplay = document.querySelector(".nav-display")
 
-let currentMonster = monsterData[1];
-
 const levelConvert = (research) => {
     const level = Math.floor(research / 100) + 1
     const progress = String(research).slice(-2)
@@ -284,6 +289,7 @@ const createNav = (monsterArr) => {
     monsterArr.map((monster) => {
         const navItem = document.createElement("li")
         navItem.className = "nav-item"
+        navItem.id = `monsterNav${monster.id}`
 
         const navImg = document.createElement("img")
         const srcImg = monster.name.replaceAll(" ", "_").replaceAll("-", "_").toLowerCase()
@@ -326,6 +332,15 @@ const createNav = (monsterArr) => {
         
 
         navDisplay.appendChild(navItem)
+
+        navItem.addEventListener("mouseenter", () => {
+            const monsterById = getMonsterById(monsterData, monster.id)
+            updateMonsterInfo(monsterById)
+
+            changeNavHover(currentMonster.id, monster.id)
+
+            currentMonster = monsterById
+        })
     })
 
     
@@ -381,12 +396,47 @@ const createLi = (id) => {
 
 const renderHabitat = (habitatArr) => {
     for (let i = 0; i < 6; i++) {
+        document.getElementById(`habitatImg${i}`).src = "./images/map_icons/none.png"
+        document.getElementById(`habitatSpan${i}`).innerHTML = "&#8205"
+    }
+
+    for (let i = 0; i < 6; i++) {
+        const habitatImg = document.getElementById(`habitatImg${i}`)
+        const habitatSpan = document.getElementById(`habitatSpan${i}`)
+
         if (habitatArr[i] !== undefined) {
-            createLi(habitatArr[i].id)
-        } else {
-            createLi(0)
+            switch (habitatArr[i].id) {
+                case 0:
+                    habitatImg.src = "./images/map_icons/none.png"
+                    habitatSpan.innerHTML = "&#8205"
+                    break
+                case 1:
+                    habitatImg.src = "./images/map_icons/ancient_forest.webp"
+                    habitatSpan.innerHTML = "Ancient Forest"
+                    break
+                case 2:
+                    habitatImg.src = "./images/map_icons/wildspire_waste.webp"
+                    habitatSpan.innerHTML = "Wildspire Waste"
+                    break
+                case 3:
+                    habitatImg.src = "./images/map_icons/coral_highlands.webp"
+                    habitatSpan.innerHTML = "Coral Highlands"
+                    break
+                case 4:
+                    habitatImg.src = "./images/map_icons/rotten_vale.webp"
+                    habitatSpan.innerHTML = "Rotten Vale"
+                    break
+                case 5:
+                    habitatImg.src = "./images/map_icons/elders_recess.webp"
+                    habitatSpan.innerHTML = "Elders Recess"
+                    break
+                case 6:
+                    habitatImg.src = "./images/map_icons/hoartfrost_reach.png"
+                    habitatSpan.innerHTML = "Hoartfrost Reach"
+                    break
+            }
         }
-    }   
+    }
 }
 
 const updateMonsterInfo = (monster) => {
@@ -401,8 +451,13 @@ const updateMonsterInfo = (monster) => {
     monsterInformation.innerHTML = monster.information
 };
 
+const getMonsterById = (arr, id) => {
+    return arr.filter((monster) => monster.id === id)[0]
+}
+
 window.addEventListener("DOMContentLoaded", () => {
     updateMonsterInfo(currentMonster);
+    document.getElementById("monsterNav0").classList.add("nav-item-hover")
 });
 
 createNav(monsterData)
