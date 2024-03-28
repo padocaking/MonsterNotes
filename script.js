@@ -168,29 +168,213 @@ const monsterData = [
     },
     {
         id: 7,
-        name: "",
-        class: "",
+        name: "Rathian",
+        class: "Flying Wyvern",
         hunted: 0,
         captured: 0,
         smallest: 0,
         largest: 0,
         baseSizes: {
-            miniature: 0,
-            big: 0,
-            giant: 0,
+            miniature: 1578.93,
+            big: 2017.53,
+            giant: 2157.88,
         },
         sizes: {
             smallest: 0,
             largest: 0,
         },
-        characteristics: "",
-        habitats: [{ id: 0, name: "" }],
-        information: "",
+        characteristics: 'Wyverns known as the "Queens of the Land." Terrestrial predators, they overpower prey with their venomous tails and powerful legs.',
+        habitats: [{ id: 1, name: "Ancient Forest" }, { id: 2, name: "Wildspire Waste"}],
+        information: "Come prepared with fire-resistant armor, and neuter its poison attacks by severing its tail. Be careful when stealing an egg from its nest, for a Rathian will chase an egg thief to the ends of the New World.",
         research: 0,
-        iconPath: "./images/monster_icons/.webp",
+        iconPath: "./images/monster_icons/rathian.webp",
     },
     {
         id: 8,
+        name: "Tzitzi-Ya-Ku",
+        class: "Bird Wyvern",
+        hunted: 0,
+        captured: 0,
+        smallest: 0,
+        largest: 0,
+        baseSizes: {
+            miniature: 804.64,
+            big: 1028.15,
+            giant: 1099.67,
+        },
+        sizes: {
+            smallest: 0,
+            largest: 0,
+        },
+        characteristics: "TBA",
+        habitats: [{ id: 3, name: "Coral Highlands" }],
+        information: "TBA",
+        research: 0,
+        iconPath: "./images/monster_icons/tzitzi_ya_ku.webp",
+    },
+    {
+        id: 9,
+        name: "Paolumu",
+        class: "Flying Wyvern",
+        hunted: 0,
+        captured: 0,
+        smallest: 0,
+        largest: 0,
+        baseSizes: {
+            miniature: 1029.02,
+            big: 1314.86,
+            giant: 1406.33,
+        },
+        sizes: {
+            smallest: 0,
+            largest: 0,
+        },
+        characteristics: "Paolumu feast on eggs found in the Coral Highlands. They are able to float through the air using unique sacs in their bodies, and attack with their extremely hard tails.",
+        habitats: [{ id: 3, name: "Coral Highlands" }],
+        information: "	Paolumu can't move around as freely when its air sacs are deflated. Aim for its inflated body parts, or purposefully draw out its attacks that use up stored air, to gain the upper hand.",
+        research: 0,
+        iconPath: "./images/monster_icons/paolumu.webp",
+    },
+    {
+        id: 10,
+        name: "Great Girros",
+        class: "Fanged Wyvern",
+        hunted: 0,
+        captured: 0,
+        smallest: 0,
+        largest: 0,
+        baseSizes: {
+            miniature: 947.84,
+            big: 1211.12,
+            giant: 1295.37,
+        },
+        sizes: {
+            smallest: 0,
+            largest: 0,
+        },
+        characteristics: "A monster that scavenges for meals dropped from the Coral Highlands. It acts as the alpha leader of a Girros pack, and sports giant fangs that paralyze its prey.",
+        habitats: [{ id: 4, name: "Rotten Vale" }],
+        information: "Taking down lesser Girros will make the rest of the pack scatter, and should be a top priority. Breaking the fangs of a Great Girros will make its paralyzing agent much weaker.",
+        research: 0,
+        iconPath: "./images/monster_icons/great_girros.webp",
+    },
+    {
+        id: 11,
+        name: "Radobaan",
+        class: "Brute Wyvern",
+        hunted: 0,
+        captured: 0,
+        smallest: 0,
+        largest: 0,
+        baseSizes: {
+            miniature: 1623.12,
+            big: 1983.82,
+            giant: 2164.16,
+        },
+        sizes: {
+            smallest: 0,
+            largest: 0,
+        },
+        characteristics: "A gigantic brute wyvern that eats the bones of carcasses found in the Rotten Vale, using some of it as armor. It also rolls into a ball as a form of attack and transportation.",
+        habitats: [{ id: 4, name: "Rotten Vale" }],
+        information: "Attack it as it rolls around to throw it off balance and knock it down. Chunks of bone can be mined from its body once it's down. Shattering its bone armor is the key to winning a fight against this beast.",
+        research: 0,
+        iconPath: "./images/monster_icons/radobaan.webp",
+    },
+    {
+        id: 12,
+        name: "Legiana",
+        class: "Flying Wyvern",
+        hunted: 0,
+        captured: 0,
+        smallest: 0,
+        largest: 0,
+        baseSizes: {
+            miniature: 1529.78,
+            big: 1954.71,
+            giant: 2090.69,
+        },
+        sizes: {
+            smallest: 0,
+            largest: 0,
+        },
+        characteristics: "The apex monster of the Coral Highlands, whose diet primarily consists of Raphinos. It emits a chilling wind from its body, which dulls its prey's ability to escape.",
+        habitats: [{ id: 3, name: "Coral Highlands" }],
+        information: "The membrane that covers its entire body enables Legiana to move with incredible speed. Damaging this membrane should help with slowing it down. Poison attacks have also been known to be effective.",
+        research: 0,
+        iconPath: "./images/monster_icons/legiana.webp",
+    },
+    {
+        id: 13,
+        name: "Odogaron",
+        class: "Fanged Wyvern",
+        hunted: 0,
+        captured: 0,
+        smallest: 0,
+        largest: 0,
+        baseSizes: {
+            miniature: 1249.88,
+            big: 1597.06,
+            giant: 1708.16,
+        },
+        sizes: {
+            smallest: 0,
+            largest: 0,
+        },
+        characteristics: "A terrifying monster that scours the Rotten Vale for carrion. Its highly aggressive nature means that anything, be it monster or man, is a potential meal.",
+        habitats: [{ id: 3, name: "Coral Highlands" }, { id: 4, name: "Rotten Vale" }],
+        information: "Odogaron's nasty claws cause heavy bleeding and should be avoided at all costs. Use meat to lure it into traps, stagger it, or coerce it into bouts of rage to tire it out and make it easier to deal with.",
+        research: 0,
+        iconPath: "./images/monster_icons/odogaron.webp",
+    },
+    {
+        id: 14,
+        name: "Rathalos",
+        class: "Flying Wyvern",
+        hunted: 0,
+        captured: 0,
+        smallest: 0,
+        largest: 0,
+        baseSizes: {
+            miniature: 1533.8,
+            big: 1959.85,
+            giant: 2096.19,
+        },
+        sizes: {
+            smallest: 0,
+            largest: 0,
+        },
+        characteristics: 'The apex monster of the Ancient Forest, also known as the "King of the Skies." A terrible wyvern that descends upon invaders, attacking with poison claws and fiery breath.',
+        habitats: [{ id: 1, name: "Ancient Forest" }],
+        information: "Rathalos prefer to stay airborne to unleash their myriad attacks, but a well-placed flash bomb or a shot from your slinger can send them crashing to the earth. Wounding their wings gives them a moment of vulnerability whenever they try to take flight.",
+        research: 0,
+        iconPath: "./images/monster_icons/rathalos.webp",
+    },
+    {
+        id: 15,
+        name: "Diablos",
+        class: "Flying Wyvern",
+        hunted: 0,
+        captured: 0,
+        smallest: 0,
+        largest: 0,
+        baseSizes: {
+            miniature: 1886.63,
+            big: 2410.69,
+            giant: 2578.39,
+        },
+        sizes: {
+            smallest: 0,
+            largest: 0,
+        },
+        characteristics: "The apex monster of the Wildspire Waste. A menacing, territorial beast that lurks underground. Loud noises will cause it to lunge out of the sand in search of prey.",
+        habitats: [{ id: 2, name: "Wildspire Waste" }],
+        information: "Diablos can be forcibly brought to the surface by using loud sounds. And its charging attack, while devastatingly powerful, can be baited into colliding with a wildspire, momentarily getting the Diablos stuck.",
+        research: 0,
+        iconPath: "./images/monster_icons/diablos.webp",
+    },
+    {
+        id: 13,
         name: "",
         class: "",
         hunted: 0,
@@ -198,9 +382,9 @@ const monsterData = [
         smallest: 0,
         largest: 0,
         baseSizes: {
-            miniature: 0,
-            big: 0,
-            giant: 0,
+            miniature: 1249.88,
+            big: 1597.06,
+            giant: 1708.16,
         },
         sizes: {
             smallest: 0,
@@ -213,7 +397,7 @@ const monsterData = [
         iconPath: "./images/monster_icons/.webp",
     },
     {
-        id: 9,
+        id: 13,
         name: "",
         class: "",
         hunted: 0,
@@ -221,9 +405,285 @@ const monsterData = [
         smallest: 0,
         largest: 0,
         baseSizes: {
-            miniature: 0,
-            big: 0,
-            giant: 0,
+            miniature: 1249.88,
+            big: 1597.06,
+            giant: 1708.16,
+        },
+        sizes: {
+            smallest: 0,
+            largest: 0,
+        },
+        characteristics: "",
+        habitats: [{ id: 0, name: "" }],
+        information: "",
+        research: 0,
+        iconPath: "./images/monster_icons/.webp",
+    },
+    {
+        id: 13,
+        name: "",
+        class: "",
+        hunted: 0,
+        captured: 0,
+        smallest: 0,
+        largest: 0,
+        baseSizes: {
+            miniature: 1249.88,
+            big: 1597.06,
+            giant: 1708.16,
+        },
+        sizes: {
+            smallest: 0,
+            largest: 0,
+        },
+        characteristics: "",
+        habitats: [{ id: 0, name: "" }],
+        information: "",
+        research: 0,
+        iconPath: "./images/monster_icons/.webp",
+    },
+    {
+        id: 13,
+        name: "",
+        class: "",
+        hunted: 0,
+        captured: 0,
+        smallest: 0,
+        largest: 0,
+        baseSizes: {
+            miniature: 1249.88,
+            big: 1597.06,
+            giant: 1708.16,
+        },
+        sizes: {
+            smallest: 0,
+            largest: 0,
+        },
+        characteristics: "",
+        habitats: [{ id: 0, name: "" }],
+        information: "",
+        research: 0,
+        iconPath: "./images/monster_icons/.webp",
+    },
+    {
+        id: 13,
+        name: "",
+        class: "",
+        hunted: 0,
+        captured: 0,
+        smallest: 0,
+        largest: 0,
+        baseSizes: {
+            miniature: 1249.88,
+            big: 1597.06,
+            giant: 1708.16,
+        },
+        sizes: {
+            smallest: 0,
+            largest: 0,
+        },
+        characteristics: "",
+        habitats: [{ id: 0, name: "" }],
+        information: "",
+        research: 0,
+        iconPath: "./images/monster_icons/.webp",
+    },
+    {
+        id: 13,
+        name: "",
+        class: "",
+        hunted: 0,
+        captured: 0,
+        smallest: 0,
+        largest: 0,
+        baseSizes: {
+            miniature: 1249.88,
+            big: 1597.06,
+            giant: 1708.16,
+        },
+        sizes: {
+            smallest: 0,
+            largest: 0,
+        },
+        characteristics: "",
+        habitats: [{ id: 0, name: "" }],
+        information: "",
+        research: 0,
+        iconPath: "./images/monster_icons/.webp",
+    },
+    {
+        id: 13,
+        name: "",
+        class: "",
+        hunted: 0,
+        captured: 0,
+        smallest: 0,
+        largest: 0,
+        baseSizes: {
+            miniature: 1249.88,
+            big: 1597.06,
+            giant: 1708.16,
+        },
+        sizes: {
+            smallest: 0,
+            largest: 0,
+        },
+        characteristics: "",
+        habitats: [{ id: 0, name: "" }],
+        information: "",
+        research: 0,
+        iconPath: "./images/monster_icons/.webp",
+    },
+    {
+        id: 13,
+        name: "",
+        class: "",
+        hunted: 0,
+        captured: 0,
+        smallest: 0,
+        largest: 0,
+        baseSizes: {
+            miniature: 1249.88,
+            big: 1597.06,
+            giant: 1708.16,
+        },
+        sizes: {
+            smallest: 0,
+            largest: 0,
+        },
+        characteristics: "",
+        habitats: [{ id: 0, name: "" }],
+        information: "",
+        research: 0,
+        iconPath: "./images/monster_icons/.webp",
+    },
+    {
+        id: 13,
+        name: "",
+        class: "",
+        hunted: 0,
+        captured: 0,
+        smallest: 0,
+        largest: 0,
+        baseSizes: {
+            miniature: 1249.88,
+            big: 1597.06,
+            giant: 1708.16,
+        },
+        sizes: {
+            smallest: 0,
+            largest: 0,
+        },
+        characteristics: "",
+        habitats: [{ id: 0, name: "" }],
+        information: "",
+        research: 0,
+        iconPath: "./images/monster_icons/.webp",
+    },
+    {
+        id: 13,
+        name: "",
+        class: "",
+        hunted: 0,
+        captured: 0,
+        smallest: 0,
+        largest: 0,
+        baseSizes: {
+            miniature: 1249.88,
+            big: 1597.06,
+            giant: 1708.16,
+        },
+        sizes: {
+            smallest: 0,
+            largest: 0,
+        },
+        characteristics: "",
+        habitats: [{ id: 0, name: "" }],
+        information: "",
+        research: 0,
+        iconPath: "./images/monster_icons/.webp",
+    },
+    {
+        id: 13,
+        name: "",
+        class: "",
+        hunted: 0,
+        captured: 0,
+        smallest: 0,
+        largest: 0,
+        baseSizes: {
+            miniature: 1249.88,
+            big: 1597.06,
+            giant: 1708.16,
+        },
+        sizes: {
+            smallest: 0,
+            largest: 0,
+        },
+        characteristics: "",
+        habitats: [{ id: 0, name: "" }],
+        information: "",
+        research: 0,
+        iconPath: "./images/monster_icons/.webp",
+    },
+    {
+        id: 13,
+        name: "",
+        class: "",
+        hunted: 0,
+        captured: 0,
+        smallest: 0,
+        largest: 0,
+        baseSizes: {
+            miniature: 1249.88,
+            big: 1597.06,
+            giant: 1708.16,
+        },
+        sizes: {
+            smallest: 0,
+            largest: 0,
+        },
+        characteristics: "",
+        habitats: [{ id: 0, name: "" }],
+        information: "",
+        research: 0,
+        iconPath: "./images/monster_icons/.webp",
+    },
+    {
+        id: 13,
+        name: "",
+        class: "",
+        hunted: 0,
+        captured: 0,
+        smallest: 0,
+        largest: 0,
+        baseSizes: {
+            miniature: 1249.88,
+            big: 1597.06,
+            giant: 1708.16,
+        },
+        sizes: {
+            smallest: 0,
+            largest: 0,
+        },
+        characteristics: "",
+        habitats: [{ id: 0, name: "" }],
+        information: "",
+        research: 0,
+        iconPath: "./images/monster_icons/.webp",
+    },
+    {
+        id: 13,
+        name: "",
+        class: "",
+        hunted: 0,
+        captured: 0,
+        smallest: 0,
+        largest: 0,
+        baseSizes: {
+            miniature: 1249.88,
+            big: 1597.06,
+            giant: 1708.16,
         },
         sizes: {
             smallest: 0,
@@ -244,6 +704,7 @@ let currentMonster = monsterData[0];
 const navMenu = document.querySelector(".menu-nav");
 const navMonster = document.querySelector(".navMonster");
 const navBackground = document.querySelector(".nav-background");
+const navDisplay = document.querySelector(".nav-display")
 
 navMenu.addEventListener("click", () => {
     navMonster.classList.add("open");
@@ -258,31 +719,6 @@ navBackground.addEventListener("click", () => {
 const changeNavHover = (prevId, currId) => {
     document.getElementById(`monsterNav${prevId}`).classList.remove("nav-item-hover")
     document.getElementById(`monsterNav${currId}`).classList.add("nav-item-hover")
-}
-
-// MAIN MONSTER INFO FUNCIONALITIES
-
-const monsterClass = document.querySelector("#monster-class");
-const monsterName = document.querySelector("#monster-name");
-const monsterIconPath = document.querySelector("#monster-icon");
-const monsterHunted = document.querySelector("#monster-hunted");
-const monsterSmallest = document.querySelector("#monster-smallest");
-const monsterLargest = document.querySelector("#monster-largest");
-const monsterCharacteristics = document.querySelector(
-    "#monster-characteristics"
-);
-const monsterHabitatsList = document.querySelector(".habitats-list")
-const monsterInformation = document.querySelector("#monster-information")
-const navDisplay = document.querySelector(".nav-display")
-
-const levelConvert = (research) => {
-    const level = Math.floor(research / 100) + 1
-    const progress = String(research).slice(-2)
-    
-    return researchLevel =  {
-        level,
-        progress
-    }
 }
 
 const createNav = (monsterArr) => {
@@ -344,6 +780,31 @@ const createNav = (monsterArr) => {
     })
 
     
+}
+
+
+// MAIN MONSTER INFO FUNCIONALITIES
+
+const monsterClass = document.querySelector("#monster-class");
+const monsterName = document.querySelector("#monster-name");
+const monsterIconPath = document.querySelector("#monster-icon");
+const monsterHunted = document.querySelector("#monster-hunted");
+const monsterSmallest = document.querySelector("#monster-smallest");
+const monsterLargest = document.querySelector("#monster-largest");
+const monsterCharacteristics = document.querySelector(
+    "#monster-characteristics"
+);
+const monsterHabitatsList = document.querySelector(".habitats-list")
+const monsterInformation = document.querySelector("#monster-information")
+
+const levelConvert = (research) => {
+    const level = Math.floor(research / 100) + 1
+    const progress = String(research).slice(-2)
+    
+    return researchLevel =  {
+        level,
+        progress
+    }
 }
 
 const createLi = (id) => {
@@ -459,5 +920,6 @@ window.addEventListener("DOMContentLoaded", () => {
     updateMonsterInfo(currentMonster);
     document.getElementById("monsterNav0").classList.add("nav-item-hover")
 });
+
 
 createNav(monsterData)
