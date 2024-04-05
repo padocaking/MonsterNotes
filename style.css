@@ -12,6 +12,23 @@
     --yellow-text: #d5a911;
     --orange-crown: #d97611;
     --blue-crown: #4c9db1;
+    --font-smaller: calc(0.6vw + 7px);
+    --font-small: calc(0.6vw + 9px);
+    --font-medium: calc(0.6vw + 12px);
+    --font-big: calc(0.6vh + 15px)
+}
+
+#loading {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    z-index: 4;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: inherit;
 }
 
 body {
@@ -49,7 +66,7 @@ img {
 
 .darker-background {
     box-sizing: content-box;
-    font-size: calc(0.8vw + 9px);
+    font-size: var(--font-small);
     padding: 8px;
     background: linear-gradient(
         90deg,
@@ -214,7 +231,7 @@ img {
 
 .nav-title {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: calc(0.8vw + 15px);
+    font-size: var(--font-big);
     color: white;
     text-shadow: 2px 2px 2px #00000099, 2px -2px 2px #00000099,
         -2px 2px 2px #00000099, -2px -2px 2px #00000099, 2px 0px 2px #00000099,
@@ -232,7 +249,7 @@ img {
 
 .research-span {
     white-space: nowrap;
-    font-size: calc(0.8vw + 7px);
+    font-size: var(--font-smaller);
     font-family: Arial, Helvetica, sans-serif;
     color: var(--yellow-text);
     font-weight: 400;
@@ -243,7 +260,7 @@ img {
 }
 
 .research-lvl {
-    font-size: calc(0.8vw + 15px);
+    font-size: var(--font-big);
     font-family: Arial, Helvetica, sans-serif;
     color: var(--yellow-text);
     font-weight: 400;
@@ -289,14 +306,14 @@ main picture {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
     height: 100%;
 }
 
 main .main-icon {
     box-sizing: border-box;
-    width: 76%;
-    padding: 8%;
-    filter: drop-shadow(0px 0px 25px rgba(0, 0, 0, 0.85));
+    width: 35%;
+    filter: drop-shadow(0px 0px 21px rgba(0, 0, 0, 0.85));
 }
 
 .title-section {
@@ -306,13 +323,13 @@ main .main-icon {
 }
 
 .title-section h3 {
-    font-size: calc(0.8vw + 12px);
+    font-size: var(--font-medium);
     font-weight: 500;
     font-family: "Times New Roman", Times, serif;
 }
 
 .title-section h2 {
-    font-size: calc(0.8vw + 22px);
+    font-size: calc(0.6vw + 22px);
     font-weight: 500;
     font-family: "Times New Roman", Times, serif;
 }
@@ -333,7 +350,7 @@ main .main-icon {
 
 .hunts .number-right {
     text-align: right;
-    font-size: calc(0.8vw + 12px);
+    font-size: var(--font-medium);
     font-weight: 500;
 }
 
@@ -362,7 +379,7 @@ main .main-icon {
 }
 
 .crown .number-right {
-    font-size: calc(0.8vw + 12px);
+    font-size: var(--font-medium);
     text-align: right;
 }
 
@@ -390,7 +407,7 @@ main .main-icon {
 }
 
 .description-section .characteristics {
-    font-size: calc(0.8vw + 7px);
+    font-size: var(--font-smaller);
     padding: 2% 2% 6% 4%;
     border: 10px solid;
     border-image-slice: 1;
@@ -512,12 +529,12 @@ main .main-icon {
 }
 
 .habitats-item img {
-    width: 45%;
+    width: 40%;
 }
 
 .habitats-item span {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: calc(0.8vw + 5px);
+    font-size: calc(0.6vw + 5px);
     color: white;
     text-shadow: 2px 2px 2px #00000099, 2px -2px 2px #00000099,
         -2px 2px 2px #00000099, -2px -2px 2px #00000099, 2px 0px 2px #00000099,
@@ -539,7 +556,7 @@ main .main-icon {
 }
 
 .information-container p {
-    font-size: calc(0.8vw + 7px);
+    font-size: var(--font-smaller);
     padding: 2% 6% 6% 6%;
     border-top: 0;
     line-height: 28px;
@@ -548,6 +565,24 @@ main .main-icon {
     text-decoration-color: rgba(124, 97, 76, 0.5);
     text-decoration-thickness: 1.5px;
     line-height: 30px;
+    overflow-y: auto;
+    max-height: 125px;
+    margin-bottom: 4%
+}
+
+.information-container p::-webkit-scrollbar {
+    width: 5px;
+    height: 8px;
+    background-color: #aaaaaa00;
+}
+
+.information-container p::-webkit-scrollbar-thumb {
+    background: #00000050;
+    border-radius: 20px;
+}
+
+.information-container p::-webkit-scrollbar-thumb:hover {
+    background: #00000088;
 }
 
 .border {
@@ -560,7 +595,7 @@ main .main-icon {
 
 @media (max-width: 1024px) {
     .darker-background {
-        font-size: calc(0.8vw + 15px);
+        font-size: var(--font-big);
     }
 
     .container {
@@ -630,8 +665,15 @@ main .main-icon {
         border-radius: 10px;
     }
 
+    main .main-icon {
+        box-sizing: border-box;
+        width: 45%;
+        padding: 5%;
+        filter: drop-shadow(0px 0px 21px rgba(0, 0, 0, 0.85));
+    }
+
     .description-section .characteristics {
-        font-size: calc(0.8vw + 12px);
+        font-size: var(--font-medium);
     }
 
     /* HABITAT */
@@ -642,7 +684,7 @@ main .main-icon {
     }
 
     .information-container p {
-        font-size: calc(0.8vw + 12px);
+        font-size: var(--font-medium);
     }
 
     .habitats-item img {
@@ -650,6 +692,6 @@ main .main-icon {
     }
 
     .habitats-item span {
-        font-size: calc(0.8vh + 10px)
+        font-size: var(--font-small);
     }
 }

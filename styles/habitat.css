@@ -1,0 +1,157 @@
+.monsterInfo2 {
+    background-image: url(../images/monster-info1.png);
+    background-repeat: repeat;
+    background-size: 400px;
+    background-position: 320px 100px;
+    position: relative;
+    box-shadow: inset 10px 0px 20px 0px #ba8f64;
+    border-radius: 0px 10px 10px 0px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.habitats-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin-top: 12%;
+}
+
+.habitats-container span {
+    width: 100%;
+    text-align: center;
+}
+
+.habitats-list {
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 2px;
+    border-image-source: linear-gradient(
+        90deg,
+        rgba(124, 97, 76, 0.519) 0%,
+        rgba(124, 97, 76, 0) 12%,
+        rgba(124, 97, 76, 1) 19%,
+        rgba(124, 97, 76, 1) 24%,
+        rgba(124, 97, 76, 1) 35%,
+        rgba(124, 97, 76, 1) 39%,
+        rgba(124, 97, 76, 1) 45%,
+        rgba(124, 97, 76, 0) 50%,
+        rgba(124, 97, 76, 1) 60%,
+        rgba(124, 97, 76, 1) 67%,
+        rgba(124, 97, 76, 1) 73%,
+        rgba(124, 97, 76, 0) 81%,
+        rgba(124, 97, 76, 1) 87%,
+        rgba(124, 97, 76, 1) 91%,
+        rgba(124, 97, 76, 0.423) 100%
+    );
+
+    width: 100%;
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr;
+    padding: 4%;
+}
+
+.habitats-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
+    /*background: linear-gradient(
+        90deg,
+        rgba(2, 0, 36, 0) 0%,
+        rgba(167, 140, 110, 0.75) 12%,
+        rgba(167, 140, 110, 0.75) 50%,
+        rgba(167, 140, 110, 0.75) 88%,
+        rgba(0, 212, 255, 0) 100%
+    );*/
+    background-image: url(./images/background/habitat-background.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.habitats-item img {
+    width: 40%;
+}
+
+.habitats-item span {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: calc(0.6vw + 5px);
+    color: white;
+    text-shadow: 2px 2px 2px #00000099, 2px -2px 2px #00000099,
+        -2px 2px 2px #00000099, -2px -2px 2px #00000099, 2px 0px 2px #00000099,
+        0px 2px 2px #00000099, -2px 0px 2px #00000099, 0px -2px 2px #00000099,
+        -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.information-container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 8%;
+}
+
+.information-container span {
+    width: 100%;
+    text-align: center;
+}
+
+.information-container p {
+    font-size: var(--font-smaller);
+    padding: 2% 6% 6% 6%;
+    border-top: 0;
+    line-height: 28px;
+    position: relative;
+    text-decoration: underline;
+    text-decoration-color: rgba(124, 97, 76, 0.5);
+    text-decoration-thickness: 1.5px;
+    line-height: 30px;
+    overflow-y: auto;
+    max-height: 125px;
+    margin-bottom: 4%
+}
+
+.information-container p::-webkit-scrollbar {
+    width: 5px;
+    height: 8px;
+    background-color: #aaaaaa00;
+}
+
+.information-container p::-webkit-scrollbar-thumb {
+    background: #00000050;
+    border-radius: 20px;
+}
+
+.information-container p::-webkit-scrollbar-thumb:hover {
+    background: #00000088;
+}
+
+.border {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 70%;
+    z-index: 1;
+}
+
+@media (max-width: 1024px) {
+    .monsterInfo2 {
+        margin: 15px 0px;
+        border-radius: 10px;
+    }
+
+    .information-container p {
+        font-size: var(--font-medium);
+    }
+
+    .habitats-item img {
+        width: 50%;
+    }
+
+    .habitats-item span {
+        font-size: var(--font-small);
+    }
+}

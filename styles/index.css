@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    z-index: 2;
+    list-style: none;
+}
+
+:root {
+    --yellow-text: #d5a911;
+    --orange-crown: #d97611;
+    --blue-crown: #4c9db1;
+    --font-smaller: calc(0.6vw + 7px);
+    --font-small: calc(0.6vw + 9px);
+    --font-medium: calc(0.6vw + 12px);
+    --font-big: calc(0.6vh + 15px)
+}
+
+#loading {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    z-index: 4;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: inherit;
+}
+
+body {
+    background-image: url(../images/leather-texture2.png);
+    background-size: 2200px;
+    box-shadow: inset 1px 1px 10px 15px rgba(0, 0, 0, 0.1),
+        inset 1px -1px 10px 15px rgba(0, 0, 0, 0.1),
+        inset -1px 1px 10px 15px rgba(0, 0, 0, 0.1),
+        -1px -1px 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.menu-nav {
+    display: none;
+}
+
+.nav-background {
+    display: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 0.3fr 0.35fr 0.35fr;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.arial {
+    font-family: "Arimo", sans-serif;
+    font-weight: 500;
+}
+
+.darker-background {
+    box-sizing: content-box;
+    font-size: var(--font-small);
+    padding: 8px;
+    background: linear-gradient(
+        90deg,
+        rgba(2, 0, 36, 0) 0%,
+        rgba(167, 140, 110, 0.75) 12%,
+        rgba(167, 140, 110, 0.75) 50%,
+        rgba(167, 140, 110, 0.75) 88%,
+        rgba(0, 212, 255, 0) 100%
+    );
+
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: var(--yellow-text);
+    font-weight: 400;
+    text-shadow: 2px 2px 2px #00000099, 2px -2px 2px #00000099,
+        -2px 2px 2px #00000099, -2px -2px 2px #00000099, 2px 0px 2px #00000099,
+        0px 2px 2px #00000099, -2px 0px 2px #00000099, 0px -2px 2px #00000099,
+        -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.custom-border {
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 2px;
+    border-image-source: linear-gradient(
+        90deg,
+        rgba(124, 97, 76, 0) 0%,
+        rgba(124, 97, 76, 1) 12%,
+        rgba(124, 97, 76, 1) 19%,
+        rgba(124, 97, 76, 0) 24%,
+        rgba(124, 97, 76, 0) 30%,
+        rgba(124, 97, 76, 1) 35%,
+        rgba(124, 97, 76, 1) 39%,
+        rgba(124, 97, 76, 1) 45%,
+        rgba(124, 97, 76, 1) 50%,
+        rgba(124, 97, 76, 0) 57%,
+        rgba(124, 97, 76, 1) 67%,
+        rgba(124, 97, 76, 0.4822303921568627) 73%,
+        rgba(124, 97, 76, 0) 81%,
+        rgba(124, 97, 76, 0.5942752100840336) 87%,
+        rgba(124, 97, 76, 1) 91%,
+        rgba(124, 97, 76, 0) 100%
+    );
+    border-left: 0;
+    border-right: 0;
+}
+
+@media (max-width: 1024px) {
+    .darker-background {
+        font-size: var(--font-big);
+    }
+
+    .container {
+        padding: 0;
+        grid-template-columns: 1fr;
+        min-height: auto;
+    }
+
+    .border {
+        display: none;
+    }
+}

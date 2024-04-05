@@ -1,0 +1,182 @@
+main {
+    background-image: url(../images/monster-info1.png);
+    background-repeat: repeat;
+    background-size: 400px;
+    background-position: 200px 100px;
+    position: relative;
+    box-shadow: inset -10px 0px 20px 0px #bb9066;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 10px 0px 0px 10px;
+}
+
+main picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+main .main-icon {
+    box-sizing: border-box;
+    width: 35%;
+    filter: drop-shadow(0px 0px 21px rgba(0, 0, 0, 0.85));
+}
+
+.title-section {
+    width: 90%;
+    text-align: center;
+    margin-top: 12%;
+}
+
+.title-section h3 {
+    font-size: var(--font-medium);
+    font-weight: 500;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.title-section h2 {
+    font-size: calc(0.6vw + 22px);
+    font-weight: 500;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.hunt-section {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    gap: 7px;
+}
+
+.hunts {
+    display: grid;
+    grid-template-columns: 0.45fr 0.55fr;
+    justify-items: stretch;
+    align-items: center;
+}
+
+.hunts .number-right {
+    text-align: right;
+    font-size: var(--font-medium);
+    font-weight: 500;
+}
+
+.crowns-section {
+    display: flex;
+    width: 100%;
+    gap: 4%;
+}
+
+.crown {
+    display: grid;
+    grid-template-columns: 2fr minmax(25px, 0.5fr) 1fr;
+    align-items: center;
+    gap: 10px;
+}
+
+@media (max-width: 1250px) {
+    .crowns-section {
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    .crowns-section img {
+        max-height: 30px;
+    }
+}
+
+.crown .number-right {
+    font-size: var(--font-medium);
+    text-align: right;
+}
+
+.smallest {
+    color: var(--orange-crown);
+    text-shadow: 1px 1px 3px #00000064, -1px -1px 3px #00000064,
+        1px -1px 3px #00000064, -1px 1px 3px #00000064;
+}
+
+.largest {
+    color: var(--blue-crown);
+    text-shadow: 1px 1px 3px #00000064, -1px -1px 3px #00000064,
+        1px -1px 3px #00000064, -1px 1px 3px #00000064;
+}
+
+.description-section {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    margin-top: 7px;
+}
+
+.description-section span {
+    text-align: center;
+}
+
+.description-section .characteristics {
+    font-size: var(--font-smaller);
+    padding: 2% 2% 6% 4%;
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 2px;
+    border-image-source: linear-gradient(
+        90deg,
+        rgba(124, 97, 76, 0.519) 0%,
+        rgba(124, 97, 76, 0) 12%,
+        rgba(124, 97, 76, 1) 19%,
+        rgba(124, 97, 76, 1) 24%,
+        rgba(124, 97, 76, 1) 35%,
+        rgba(124, 97, 76, 1) 39%,
+        rgba(124, 97, 76, 1) 45%,
+        rgba(124, 97, 76, 0) 50%,
+        rgba(124, 97, 76, 1) 60%,
+        rgba(124, 97, 76, 1) 67%,
+        rgba(124, 97, 76, 1) 73%,
+        rgba(124, 97, 76, 0) 81%,
+        rgba(124, 97, 76, 1) 87%,
+        rgba(124, 97, 76, 1) 91%,
+        rgba(124, 97, 76, 0.423) 100%
+    );
+    border-top: 0;
+    height: 125px;
+    overflow-y: auto;
+    margin-bottom: 15%;
+    line-height: 30px;
+}
+
+.characteristics::-webkit-scrollbar {
+    width: 5px;
+    height: 8px;
+    background-color: #aaaaaa00;
+}
+
+.characteristics::-webkit-scrollbar-thumb {
+    background: #00000050;
+    border-radius: 20px;
+}
+
+.characteristics::-webkit-scrollbar-thumb:hover {
+    background: #00000088;
+}
+
+@media (max-width: 1024px) {
+    main {
+        margin-top: 15px;
+        border-radius: 10px;
+    }
+
+    main .main-icon {
+        box-sizing: border-box;
+        width: 45%;
+        padding: 5%;
+        filter: drop-shadow(0px 0px 21px rgba(0, 0, 0, 0.85));
+    }
+
+    .description-section .characteristics {
+        font-size: var(--font-medium);
+    }
+}

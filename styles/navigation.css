@@ -1,0 +1,201 @@
+.navMonster {
+    background-image: url(../images/monster-info1.png);
+    background-repeat: repeat;
+    background-size: 400px;
+    background-position: 200px 300px;
+    margin-right: 20px;
+    position: relative;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: calc(100vh - 40px);
+}
+
+.nav-header {
+    width: 110%;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.nav-header h2 {
+    padding: 5%;
+}
+
+.nav-display {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    scroll-snap-type: y mandatory;
+    margin: 2%;
+}
+
+.nav-display::-webkit-scrollbar {
+    width: 5px;
+    height: 8px;
+    background-color: #aaaaaa00;
+}
+
+.nav-item {
+    font-family: "Arimo", sans-serif;
+    font-weight: 500;
+    scroll-snap-align: end;
+    width: 100%;
+    height: 14%;
+    display: flex;
+    align-items: center;
+    padding-bottom: 1%;
+    /*border-bottom: 3px dotted rgba(167, 140, 110, 0.75);*/
+    background-image: linear-gradient(to right, rgba(166, 140, 110, 0.749) 75%, rgba(167, 140, 110, 0) 0%);
+    background-position: bottom;
+    background-size: 15px 3px;
+    background-repeat: repeat-x;
+    padding: 3%;
+
+    transition: all 0.1s;
+}
+
+@keyframes hoverFx {
+    0% {
+        background-color: #3aff2c4a;
+    }
+
+    50% {
+        background-color: #25f3162a;
+    }
+
+    75% {
+        background-color: #27e61945;
+    }
+
+    100% {
+        background-color: #3aff2c4a;
+    }
+}
+
+.nav-item-hover {
+    /*background-color: #ba8f644a;*/
+    animation: hoverFx ease 2s;
+    animation-iteration-count: infinite;
+}
+
+.nav-item img {
+    height: 110%;
+    filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.9));
+    margin: 0 10px;
+}
+
+.nav-item-info {
+    width: 100%;
+    padding: 3.5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: var(--font-big);
+    color: white;
+    text-shadow: 2px 2px 2px #00000099, 2px -2px 2px #00000099,
+        -2px 2px 2px #00000099, -2px -2px 2px #00000099, 2px 0px 2px #00000099,
+        0px 2px 2px #00000099, -2px 0px 2px #00000099, 0px -2px 2px #00000099,
+        -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.research-info {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 7%;
+}
+
+.research-span {
+    white-space: nowrap;
+    font-size: var(--font-smaller);
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--yellow-text);
+    font-weight: 400;
+    text-shadow: 2px 2px 2px #00000099, 2px -2px 2px #00000099,
+        -2px 2px 2px #00000099, -2px -2px 2px #00000099, 2px 0px 2px #00000099,
+        0px 2px 2px #00000099, -2px 0px 2px #00000099, 0px -2px 2px #00000099,
+        -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.research-lvl {
+    font-size: var(--font-big);
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--yellow-text);
+    font-weight: 400;
+    text-shadow: 2px 2px 2px #00000099, 2px -2px 2px #00000099,
+        -2px 2px 2px #00000099, -2px -2px 2px #00000099, 2px 0px 2px #00000099,
+        0px 2px 2px #00000099, -2px 0px 2px #00000099, 0px -2px 2px #00000099,
+        -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.research-bar {
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: rgb(2,0,36);
+    background: linear-gradient(176deg, rgba(2, 0, 36, 0.7) 0%, rgba(46,46,46,0.7) 50%, rgba(125,125,125,0.7) 100%);
+    border: 2px solid rgba(167, 140, 110, 0.75);
+}
+
+.bar-progress {
+    width: 50%;
+    height: 100%;
+    background-color: var(--yellow-text);
+}
+
+@media (max-width: 1024px) {
+    .nav-background {
+        position: fixed;
+        opacity: 0%;
+        z-index: 3;
+        height: 100vh;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.56);
+    }
+
+    .active {
+        display: inline-block;
+        opacity: 100%;
+        transition: all 0.2s ease;
+    }
+    
+    .navMonster {
+        position: fixed;
+        height: 100vh;
+        width: 80%;
+        z-index: 4;
+        padding: 0;
+        transform: translateX(-107%);
+        transition: all 0.3s ease;
+    }
+
+    .open {
+        transform: translateX(0);
+    }
+
+    .menu-nav {
+        display: inline-block;
+        z-index: 4;
+        position: absolute;
+        background-image: url(./images/menu-background.png);
+        background-size: cover;
+        background-position: -54px;
+        padding: 30px 10px;
+        width: 15%;
+        border-radius: 0px 40% 40% 0px;
+        top: 40px;
+        cursor: pointer;
+        box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.542);
+    }
+
+    .monster-menu {
+        max-width: 100%;
+    }
+}

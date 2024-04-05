@@ -374,327 +374,563 @@ const monsterData = [
         iconPath: "./images/monster_icons/diablos.webp",
     },
     {
-        id: 13,
-        name: "",
-        class: "",
+        id: 15,
+        name: "Diablos",
+        class: "Flying Wyvern",
         hunted: 0,
         captured: 0,
         smallest: 0,
         largest: 0,
         baseSizes: {
-            miniature: 1249.88,
-            big: 1597.06,
-            giant: 1708.16,
+          miniature: 1886.63,
+          big: 2410.69,
+          giant: 2578.39
         },
         sizes: {
-            smallest: 0,
-            largest: 0,
+          smallest: 0,
+          largest: 0
         },
-        characteristics: "",
-        habitats: [{ id: 0, name: "" }],
-        information: "",
+        characteristics: "The apex monster of the Wildspire Waste. A menacing, territorial beast that lurks underground. Loud noises will cause it to lunge out of the sand in search of prey.",
+        habitats: [
+          {
+            id: 2,
+            name: "Wildspire Waste"
+          }
+        ],
+        information: "Diablos can be forcibly brought to the surface by using loud sounds. And its charging attack, while devastatingly powerful, can be baited into colliding with a wildspire, momentarily getting the Diablos stuck.",
         research: 0,
-        iconPath: "./images/monster_icons/.webp",
-    },
-    {
-        id: 13,
-        name: "",
-        class: "",
+        iconPath: "./images/monster_icons/diablos.webp"
+      },
+      {
+        id: 16,
+        name: "Zorah Magdaros",
+        class: "Elder Dragon",
         hunted: 0,
         captured: 0,
         smallest: 0,
         largest: 0,
         baseSizes: {
-            miniature: 1249.88,
-            big: 1597.06,
-            giant: 1708.16,
+          miniature: 23188.13,
+          big: 29629.28,
+          giant: 31690.45
         },
         sizes: {
-            smallest: 0,
-            largest: 0,
+          smallest: 0,
+          largest: 0
         },
-        characteristics: "",
-        habitats: [{ id: 0, name: "" }],
+        characteristics: "An elder dragon that rises from the earth like a volcano. Where it's headed, and why, the Research Commission has yet to figure out.",
+        habitats: [],
         information: "",
         research: 0,
-        iconPath: "./images/monster_icons/.webp",
-    },
-    {
-        id: 13,
-        name: "",
-        class: "",
+        iconPath: "./images/monster_icons/zorah_magdaros.webp"
+      },
+      {
+        id: 17,
+        name: "Dodogama",
+        class: "Fanged Wyvern",
         hunted: 0,
         captured: 0,
         smallest: 0,
         largest: 0,
         baseSizes: {
-            miniature: 1249.88,
-            big: 1597.06,
-            giant: 1708.16,
+          miniature: 1000,
+          big: 1277.78,
+          giant: 1366.67
         },
         sizes: {
-            smallest: 0,
-            largest: 0,
+          smallest: 0,
+          largest: 0
         },
-        characteristics: "",
-        habitats: [{ id: 0, name: "" }],
-        information: "",
+        characteristics: "A monster that devours rocks as its primary diet. The crystals it devours mix with its saliva to produce explosive minerals that it can spit at its enemies.",
+        habitats: [
+          {
+            id: 5,
+            name: "Elder's Recess"
+          }
+        ],
+        information: "Dodogama collects explosive minerals in its mouth, but doing so weakens its massive jaw. Causing the minerals to detonate while they're still in Dodogama's mouth will create a great opening for an attack.",
         research: 0,
-        iconPath: "./images/monster_icons/.webp",
-    },
-    {
-        id: 13,
-        name: "",
-        class: "",
+        iconPath: "./images/monster_icons/dodogama.webp"
+      },
+      {
+        id: 18,
+        name: "Lavasioth",
+        class: "Piscine Wyvern",
         hunted: 0,
         captured: 0,
         smallest: 0,
         largest: 0,
         baseSizes: {
-            miniature: 1249.88,
-            big: 1597.06,
-            giant: 1708.16,
+          miniature: 1617.52,
+          big: 2066.83,
+          giant: 2210.61
         },
         sizes: {
-            smallest: 0,
-            largest: 0,
+          smallest: 0,
+          largest: 0
         },
-        characteristics: "",
-        habitats: [{ id: 0, name: "" }],
-        information: "",
+        characteristics: "Lavasioths utilize molten lava as armor. They are extremely aggressive and will attack without prejudice until the threat has been eliminated.",
+        habitats: [
+          {
+            id: 5,
+            name: "Elder's Recess"
+          }
+        ],
+        information: "The hardened magma on Lavasioth's body becomes softer as it swims through the lava. Attack its armor immediately after it surfaces to increase your chances of destroying it before it rehardens.",
         research: 0,
-        iconPath: "./images/monster_icons/.webp",
-    },
-    {
-        id: 13,
-        name: "",
-        class: "",
+        iconPath: "./images/monster_icons/lavasioth.webp"
+      },
+      {
+        id: 19,
+        name: "Uragaan",
+        class: "Brute Wyvern",
         hunted: 0,
         captured: 0,
         smallest: 0,
         largest: 0,
         baseSizes: {
-            miniature: 1249.88,
-            big: 1597.06,
-            giant: 1708.16,
+          miniature: 1852.77,
+          big: 2264.49,
+          giant: 2470.36
         },
         sizes: {
-            smallest: 0,
-            largest: 0,
+          smallest: 0,
+          largest: 0
         },
-        characteristics: "",
-        habitats: [{ id: 0, name: "" }],
-        information: "",
+        characteristics: "Large brute wyverns that feed on ore, using their mighty jaws to crush solid rock to powder. They've been known to confront Lavasioths over territory disputes.",
+        habitats: [
+          {
+            id: 5,
+            name: "Elder's Recess"
+          }
+        ],
+        information: "A crushing slam from the Uragaan's jaw can send shockwaves across the ground, detonating any explosive rocks in the area. In addition, when an Uragaan is toppled, its body can be mined for ore.",
         research: 0,
-        iconPath: "./images/monster_icons/.webp",
-    },
-    {
-        id: 13,
-        name: "",
-        class: "",
+        iconPath: "./images/monster_icons/uragaan.webp"
+      },
+      {
+        id: 20,
+        name: "Azure Rathalos",
+        class: "Flying Wyvern",
         hunted: 0,
         captured: 0,
         smallest: 0,
         largest: 0,
         baseSizes: {
-            miniature: 1249.88,
-            big: 1597.06,
-            giant: 1708.16,
+          miniature: 1533.8,
+          big: 1959.85,
+          giant: 2096.19
         },
         sizes: {
-            smallest: 0,
-            largest: 0,
+          smallest: 0,
+          largest: 0
         },
-        characteristics: "",
-        habitats: [{ id: 0, name: "" }],
-        information: "",
+        characteristics: "An azure-colored subspecies of Rathalos. More mobile than their standard cousins, they locate prey from the air and quickly swoop in for the kill.",
+        habitats: [
+          {
+            id: 1,
+            name: "Ancient Forest"
+          },
+          {
+            id: 5,
+            name: "Elder's Recess"
+          }
+        ],
+        information: "Counter its airborne onslaught by observing its flight patterns and finding the right moment to knock it out of the sky. Once grounded, it loses its ability to perform consecutive attacks, making the fight much easier.",
         research: 0,
-        iconPath: "./images/monster_icons/.webp",
-    },
-    {
-        id: 13,
-        name: "",
-        class: "",
+        iconPath: "./images/monster_icons/azure_rathalos.webp"
+      },
+      {
+        id: 21,
+        name: "Bazelgeuse",
+        class: "Flying Wyvern",
         hunted: 0,
         captured: 0,
         smallest: 0,
         largest: 0,
         baseSizes: {
-            miniature: 1249.88,
-            big: 1597.06,
-            giant: 1708.16,
+          miniature: 1735.54,
+          big: 2217.64,
+          giant: 2371.91
         },
         sizes: {
-            smallest: 0,
-            largest: 0,
+          smallest: 0,
+          largest: 0
         },
-        characteristics: "",
-        habitats: [{ id: 0, name: "" }],
-        information: "",
+        characteristics: "TBA",
+        habitats: [
+          {
+            id: 5,
+            name: "Elder's Recess"
+          }
+        ],
+        information: "TBA",
         research: 0,
-        iconPath: "./images/monster_icons/.webp",
-    },
-    {
-        id: 13,
-        name: "",
-        class: "",
+        iconPath: "./images/monster_icons/bazelgeuse.webp"
+      },
+      {
+        id: 22,
+        name: "Black Diablos",
+        class: "Flying Wyvern",
         hunted: 0,
         captured: 0,
         smallest: 0,
         largest: 0,
         baseSizes: {
-            miniature: 1249.88,
-            big: 1597.06,
-            giant: 1708.16,
+          miniature: 1886.63,
+          big: 2410.69,
+          giant: 2578.39
         },
         sizes: {
-            smallest: 0,
-            largest: 0,
+          smallest: 0,
+          largest: 0
         },
-        characteristics: "",
-        habitats: [{ id: 0, name: "" }],
-        information: "",
+        characteristics: "These black-shelled Diablos are actually female Diablos in heat. The color signals their aggressiveness and heightened hostility to other creatures in their habitat.",
+        habitats: [
+          {
+            id: 2,
+            name: "Wildspire Waste"
+          }
+        ],
+        information: "Diablos are much more aggressive against intruders when in heat, and are known to attack enemies in retreat. Do not let your guard down even if you think you've established a safe distance from these monsters.",
         research: 0,
-        iconPath: "./images/monster_icons/.webp",
-    },
-    {
-        id: 13,
-        name: "",
-        class: "",
+        iconPath: "./images/monster_icons/black_diablos.webp"
+      },
+      {
+        id: 23,
+        name: "Kirin",
+        class: "Elder Dragon",
         hunted: 0,
         captured: 0,
         smallest: 0,
         largest: 0,
         baseSizes: {
-            miniature: 1249.88,
-            big: 1597.06,
-            giant: 1708.16,
+          miniature: 482.63,
+          big: 616.7,
+          giant: 659.6
         },
         sizes: {
-            smallest: 0,
-            largest: 0,
+          smallest: 0,
+          largest: 0
         },
-        characteristics: "",
-        habitats: [{ id: 0, name: "" }],
-        information: "",
+        characteristics: "Kirin are so rarely sighted that little is known of their ecology. It's been said they envelop themselves in pure electricity when they are provoked.",
+        habitats: [
+          {
+            id: 3,
+            name: "Coral Highlands"
+          }
+        ],
+        information: "The lightning a Kirin cloaks itself with has been confirmed to toughen its skin. The key to hunting a Kirin lies in staggering it, using Elderseal weapons, and protecting yourself from and avoiding its lightning attacks.",
         research: 0,
-        iconPath: "./images/monster_icons/.webp",
-    },
-    {
-        id: 13,
-        name: "",
-        class: "",
+        iconPath: "./images/monster_icons/kirin.webp"
+      },
+      {
+        id: 24,
+        name: "Nergigante",
+        class: "Elder Dragon",
         hunted: 0,
         captured: 0,
         smallest: 0,
         largest: 0,
         baseSizes: {
-            miniature: 1249.88,
-            big: 1597.06,
-            giant: 1708.16,
+          miniature: 1663.31,
+          big: 2125.34,
+          giant: 2273.19
         },
         sizes: {
-            smallest: 0,
-            largest: 0,
+          smallest: 0,
+          largest: 0
         },
-        characteristics: "",
-        habitats: [{ id: 0, name: "" }],
-        information: "",
+        characteristics: "A terrible elder dragon that appears when other elders are in the vicinity. Its penchant for destruction is well-documented.",
+        habitats: [
+          {
+            id: 5,
+            name: "Elder's Recess"
+          }
+        ],
+        information: "Nergigante can recover from wounds almost instantaneously. Regenerated body parts grow harder over time, so attacking them while they're still fresh is the ideal strategy.",
         research: 0,
-        iconPath: "./images/monster_icons/.webp",
-    },
-    {
-        id: 13,
-        name: "",
-        class: "",
+        iconPath: "./images/monster_icons/nergigante.webp"
+      },
+      {
+        id: 25,
+        name: "Teostra",
+        class: "Elder Dragon",
         hunted: 0,
         captured: 0,
         smallest: 0,
         largest: 0,
         baseSizes: {
-            miniature: 1249.88,
-            big: 1597.06,
-            giant: 1708.16,
+          miniature: 1611.14,
+          big: 2058.67,
+          giant: 2201.88
         },
         sizes: {
-            smallest: 0,
-            largest: 0,
+          smallest: 0,
+          largest: 0
         },
-        characteristics: "",
-        habitats: [{ id: 0, name: "" }],
-        information: "",
+        characteristics: "Brutal elder dragons wreathed in flames that spit blazing fire. Teostra are of such a fierce and deadly nature that the Guild closely monitors their movements.",
+        habitats: [
+          {
+            id: 2,
+            name: "Wildspire Waste"
+          },
+          {
+            id: 5,
+            name: "Elder's Recess"
+          }
+        ],
+        information: "The black scale dust Teostra scatters will spread over a wide area until it finally explodes. Keep an eye on that, as well as the flames it occasionally shields itself in, and aim to stagger it with weapons possessing Elderseal capabilities.",
         research: 0,
-        iconPath: "./images/monster_icons/.webp",
-    },
-    {
-        id: 13,
-        name: "",
-        class: "",
+        iconPath: "./images/monster_icons/teostra.webp"
+      },
+      {
+        id: 26,
+        name: "Kushala Daora",
+        class: "Elder Dragon",
         hunted: 0,
         captured: 0,
         smallest: 0,
         largest: 0,
         baseSizes: {
-            miniature: 1249.88,
-            big: 1597.06,
-            giant: 1708.16,
+          miniature: 1721.82,
+          big: 2200.1,
+          giant: 2353.15
         },
         sizes: {
-            smallest: 0,
-            largest: 0,
+          smallest: 0,
+          largest: 0
         },
-        characteristics: "",
-        habitats: [{ id: 0, name: "" }],
-        information: "",
+        characteristics: "An elder dragon that shields itself with fierce winds, preventing anyone from approaching it. Its skin consists of hard, metallic scales.",
+        habitats: [
+          {
+            id: 1,
+            name: "Ancient Forest"
+          },
+          {
+            id: 5,
+            name: "Elder's Recess"
+          }
+        ],
+        information: "When confronted by enemies, Kushala's wind shield continuously grows in intensity, eventually deflecting bow and bowgun attacks. Its wind shield can be weakened by staggering it, particularly with weapons with Elderseal capabilities.",
         research: 0,
-        iconPath: "./images/monster_icons/.webp",
-    },
-    {
-        id: 13,
-        name: "",
-        class: "",
+        iconPath: "./images/monster_icons/kushala_daora.webp"
+      },
+      {
+        id: 27,
+        name: "Deviljho",
+        class: "Brute Wyvern",
         hunted: 0,
         captured: 0,
         smallest: 0,
         largest: 0,
         baseSizes: {
-            miniature: 1249.88,
-            big: 1597.06,
-            giant: 1708.16,
+          miniature: 1857.44,
+          big: 2270.2,
+          giant: 2476.58
         },
         sizes: {
-            smallest: 0,
-            largest: 0,
+          smallest: 0,
+          largest: 0
         },
-        characteristics: "",
-        habitats: [{ id: 0, name: "" }],
-        information: "",
+        characteristics: "Due to its enhanced metabolism, Deviljho must constantly seek out prey. It is extremely violent, and known to snatch up large monsters in its powerful maw and flail them around.",
+        habitats: [
+          {
+            id: 1,
+            name: "Ancient Forest"
+          },
+          {
+            id: 2,
+            name: "Wildspire Waste"
+          },
+          {
+            id: 3,
+            name: "Coral Highlands"
+          },
+          {
+            id: 4,
+            name: "Rotten Vale"
+          },
+          {
+            id: 5,
+            name: "Elder's Recess"
+          }
+        ],
+        information: "When enraged, Deviljho's swollen muscles glow a hellish red. It will start spewing a sweeping dragon element attack, so watch your distance. Deviljho stays on the attack even when wounded, but don't give up; keep fighting and you'll come out on top.",
         research: 0,
-        iconPath: "./images/monster_icons/.webp",
-    },
-    {
-        id: 13,
-        name: "",
-        class: "",
+        iconPath: "./images/monster_icons/deviljho.webp"
+      },
+      {
+        id: 28,
+        name: "Pink Rathian",
+        class: "Flying Wyvern",
         hunted: 0,
         captured: 0,
         smallest: 0,
         largest: 0,
         baseSizes: {
-            miniature: 1249.88,
-            big: 1597.06,
-            giant: 1708.16,
+          miniature: 1578.93,
+          big: 2017.53,
+          giant: 2157.88
         },
         sizes: {
-            smallest: 0,
-            largest: 0,
+          smallest: 0,
+          largest: 0
         },
-        characteristics: "",
-        habitats: [{ id: 0, name: "" }],
-        information: "",
+        characteristics: "A subspecies with vibrant pink scales. Pink Rathians wield their toxic tails more deftly than normal Rathians, weakening prey with poison before moving in for the kill.",
+        habitats: [
+          {
+            id: 2,
+            name: "Wildspire Waste"
+          },
+          {
+            id: 3,
+            name: "Coral Highlands"
+          }
+        ],
+        information: "Pink Rathians develop hard shells on different body parts compared to standard Rathians, particularly on their tails. If you're looking to sever its tail, aim for the relatively soft tip of the tail.",
         research: 0,
-        iconPath: "./images/monster_icons/.webp",
-    },
+        iconPath: "./images/monster_icons/pink_rathian.webp"
+      },
+      {
+        id: 29,
+        name: "Vaal Hazak",
+        class: "Elder Dragon",
+        hunted: 0,
+        captured: 0,
+        smallest: 0,
+        largest: 0,
+        baseSizes: {
+          miniature: 1885.86,
+          big: 2409.71,
+          giant: 2577.34
+        },
+        sizes: {
+          smallest: 0,
+          largest: 0
+        },
+        characteristics: "A grotesque elder dragon that inhabits the deepest part of the Rotten Vale. It uses the fatal vapor of the vale in what appears to be a symbiotic relationship.",
+        habitats: [
+          {
+            id: 4,
+            name: "Rotten Vale"
+          }
+        ],
+        information: "Once you've become tainted, inhaling the vapor of the vale causes your own health to drain. Head for areas where the vapor is thin, and if you do get tainted, do your best to get rid of it.",
+        research: 0,
+        iconPath: "./images/monster_icons/vaal_hazak.webp"
+      },
+      {
+        id: 30,
+        name: "Xeno'jiiva",
+        class: "Elder Dragon",
+        hunted: 0,
+        captured: 0,
+        smallest: 0,
+        largest: 0,
+        baseSizes: {
+          miniature: 4058.19,
+          big: 5185.47,
+          giant: 5546.19
+        },
+        sizes: {
+          smallest: 0,
+          largest: 0
+        },
+        characteristics: "A new species discovered in the depths of the Elder's Recess. Its relationship to the other elder dragons is unclear, as is its ecology.",
+        habitats: [
+          {
+            id: 5,
+            name: "Elder's Recess"
+          }
+        ],
+        information: "Perhaps as a result of its inability to fully control its own incalculable power, Xeno'jiiva is prone to go into a rampage when its energy-filled limbs take enough damage. Endure its rampage and you may be rewarded with a good opening for attacks.",
+        research: 0,
+        iconPath: "./images/monster_icons/xeno'jiiva.webp"
+      },
+      {
+        id: 31,
+        name: "Kulve Taroth",
+        class: "Elder Dragon",
+        hunted: 0,
+        captured: 0,
+        smallest: 0,
+        largest: 0,
+        baseSizes: {
+          miniature: 4115.93,
+          big: 5259.24,
+          giant: 5625.1
+        },
+        sizes: {
+          smallest: 0,
+          largest: 0
+        },
+        characteristics: "An elder dragon that protects itself with a glittering coat of metal. Its ecology and coat differ with each appearance, thus the need for a thorough investigation.",
+        habitats: [],
+        information: "An exhaustive investigation is required in order to break Kulve Taroth's giant gold plated horns. Pursue the monster to learn more about it. Gather tracks and recruit hunters to help you further your investigation.",
+        research: 0,
+        iconPath: "./images/monster_icons/kulve_taroth.webp"
+      },
+      {
+        id: 32,
+        name: "Lunastra",
+        class: "Elder Dragon",
+        hunted: 0,
+        captured: 0,
+        smallest: 0,
+        largest: 0,
+        baseSizes: {
+          miniature: 1645.81,
+          big: 2102.98,
+          giant: 2249.28
+        },
+        sizes: {
+          smallest: 0,
+          largest: 0
+        },
+        characteristics: "A rare female Elder Dragon that litters the air with hot blue dust. Reports of it traveling with her mate, Teostra, are still unconfirmed.",
+        habitats: [
+          {
+            id: 2,
+            name: "Wildspire Waste"
+          },
+          {
+            id: 5,
+            name: "Elder's Recess"
+          }
+        ],
+        information: "Lunastra's high body temperature and dust saps away health unless you use a Cool Drink. Its dust and blue flame explode when it comes into contact with fire, so use a bomb or Crystalburst.",
+        research: 0,
+        iconPath: "./images/monster_icons/lunastra.webp"
+      },
+      {
+        id: 33,
+        name: "Behemoth",
+        class: "Elder Dragon",
+        hunted: 0,
+        captured: 0,
+        smallest: 0,
+        largest: 0,
+        baseSizes: {
+          miniature: 3081.29,
+          big: 3937.2,
+          giant: 4211.09
+        },
+        sizes: {
+          smallest: 0,
+          largest: 0
+        },
+        characteristics: "Barroth seek out ants, their favorite snack, and mark their territory with mud. They attack potential rivals with their devastating charging attack.",
+        habitats: [
+          {
+            id: 5,
+            name: "Elder's Recess"
+          }
+        ],
+        information: "While it uses hardened mud as armor, Barroth can also fling it off its body as an attack. Use water element weapons or your slinger to gradually knock off its mud.",
+        research: 0,
+        iconPath: "./images/monster_icons/behemoth.webp"
+      }
 ];
 
 let currentMonster = monsterData[0];
@@ -917,9 +1153,9 @@ const getMonsterById = (arr, id) => {
 }
 
 window.addEventListener("DOMContentLoaded", () => {
+    createNav(monsterData)
     updateMonsterInfo(currentMonster);
     document.getElementById("monsterNav0").classList.add("nav-item-hover")
 });
 
 
-createNav(monsterData)
