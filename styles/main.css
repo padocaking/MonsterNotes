@@ -166,7 +166,7 @@ main .main-icon {
 @media (max-width: 1024px) {
     main {
         margin-top: 15px;
-        border-radius: 10px;
+        border-radius: 0;
     }
 
     main .main-icon {

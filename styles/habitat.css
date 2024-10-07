@@ -67,7 +67,7 @@
         rgba(167, 140, 110, 0.75) 88%,
         rgba(0, 212, 255, 0) 100%
     );*/
-    background-image: url(./images/background/habitat-background.png);
+    background-image: url(../images/background/habitat-background.png);
     background-size: 100%;
     background-repeat: no-repeat;
 }
@@ -140,7 +140,7 @@
 @media (max-width: 1024px) {
     .monsterInfo2 {
         margin: 15px 0px;
-        border-radius: 10px;
+        border-radius: 0;
     }
 
     .information-container p {
